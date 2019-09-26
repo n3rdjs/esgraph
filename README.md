@@ -2,9 +2,7 @@
 
 creates a control flow graph from an esprima abstract syntax tree
 
-[![Build Status](https://travis-ci.org/Swatinem/esgraph.svg?branch=master)](https://travis-ci.org/Swatinem/esgraph)
-[![Coverage Status](https://coveralls.io/repos/Swatinem/esgraph/badge.svg?branch=master)](https://coveralls.io/r/Swatinem/esgraph)
-[![Dependency Status](https://gemnasium.com/Swatinem/esgraph.svg)](https://gemnasium.com/Swatinem/esgraph)
+[![Build Status](https://travis-ci.com/n3rdjs/esgraph.svg?branch=master)](https://travis-ci.com/n3rdjs/esgraph)
 
 ## Installation
 
