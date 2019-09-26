@@ -1,5 +1,5 @@
 const esgraph = require('../');
-const { parse } = require('espree');
+const { parse } = require('esprima');
 const { readdirSync, readFileSync } = require('fs');
 
 function createTest(dir, file) {

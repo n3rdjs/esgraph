@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { parse } = require('espree');
+const { parse } = require('esprima');
 const walkes = require('walkes');
 const esgraph = require('../');
 
