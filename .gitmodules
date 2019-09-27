@@ -1,0 +1,3 @@
+[submodule "test/tests/npm-module-bundled"]
+	path = test/tests/npm-module-bundled
+	url = https://github.com/n3rdjs/npm-module-bundled.git

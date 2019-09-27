@@ -18,7 +18,7 @@ function createTest(dir, file) {
 }
 
 describe('esgraph', () => {
-  const dir = `${__dirname}/tests/`;
+  const dir = `${__dirname}/tests/basic/`;
   const files = readdirSync(dir);
   files.forEach((file) => {
     if (/.js$/.test(file)) {
@@ -41,3 +41,17 @@ describe('esgraph.dot', () => {
     out.should.containEql('n10');
   });
 });
+
+describe('moddule.esgraph', ()=> {
+  const dir = `${__dirname}/tests/npm-module-bundled/`;
+  const files = readdirSync(dir);
+  files.forEach((file) => {
+    if (/.js$/.test(file)) {
+      it(`Module test ${file}`, ()=> {
+        const contents = readFileSync(dir + file, 'utf8');
+        const ast = parse(contents, { range: true });
+        esgraph(ast);
+      });
+    }
+  });
+})
