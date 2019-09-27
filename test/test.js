@@ -49,7 +49,7 @@ describe('module.esgraph', ()=> {
     if (/.js$/.test(file)) {
       it(`Module test ${file}`, function (done) {
 
-        this.timeout(5000);
+        this.timeout(10000);
         const contents = readFileSync(dir + file, 'utf8');
 
         let ast;
