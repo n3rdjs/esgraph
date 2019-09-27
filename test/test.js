@@ -42,7 +42,7 @@ describe('esgraph.dot', () => {
   });
 });
 
-describe('moddule.esgraph', ()=> {
+describe('module.esgraph', ()=> {
   const dir = `${__dirname}/tests/npm-module-bundled/`;
   const files = readdirSync(dir);
   files.forEach((file) => {
