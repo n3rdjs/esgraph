@@ -57,7 +57,7 @@ describe('module.esgraph', ()=> {
           ast = parse(contents, { range: true });
         }
         catch (e) {
-          console.log('esgraph parsing error');
+          console.log('esprima parsing error');
           done();
         }
         esgraph(ast);
