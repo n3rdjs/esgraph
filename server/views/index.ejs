@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>esgraph-viewer</title>
+        <style>
+        #convert-button {
+            display: block;
+        }
+        .editor {
+            float: left;
+
+        }
+        #svg-draw {
+            float: left;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="editor">
+            <textarea id="js-code-text" name="code" rows="20" cols="40"></textarea>
+            <button ud="convert-button" onclick="renderdot()">Render</button>
+        </div>
+        <div id="svg-draw"></div>
+        <script src="./scripts/viz.js"></script>
+        <script src="./scripts/full.render.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
