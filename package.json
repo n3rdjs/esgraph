@@ -1,7 +1,7 @@
 {
   "name": "esgraph",
   "description": "creates a control flow graph from an esprima abstract syntax tree",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "keywords": [
     "AST",
     "abstract syntax tree",
@@ -57,7 +57,8 @@
         }
       ],
       "no-param-reassign": "warn",
-      "no-shadow": "warn"
+      "no-shadow": "warn",
+      "linebreak-style": 0
     }
   },
   "repository": "git://github.com/Swatinem/esgraph.git",
