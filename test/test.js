@@ -48,7 +48,6 @@ describe('module.esgraph', ()=> {
   files.forEach((file) => {
     if (/.js$/.test(file)) {
       it(`Module test ${file}`, function (done) {
-
         this.timeout(10000);
         const contents = readFileSync(dir + file, 'utf8');
 
@@ -59,6 +58,7 @@ describe('module.esgraph', ()=> {
         catch (e) {
           console.log('esprima parsing error');
           done();
+          return;
         }
         esgraph(ast);
         done();
