@@ -7,3 +7,4 @@ npm-debug.log
 *.patch
 *.diff
 package-lock.json
+.DS_Store
