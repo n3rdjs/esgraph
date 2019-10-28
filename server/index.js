@@ -13,8 +13,8 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use('/scripts', express.static(path.join(__dirname, 'scripts')));
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false, limit: '50mb'}));
+app.use(bodyParser.json({limit: '50mb'}));
 
 app.get('/', (req, res) => {
   res.render('index');
