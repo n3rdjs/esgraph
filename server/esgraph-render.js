@@ -14,20 +14,20 @@ function esgraphRender(code, options) {
   try {
     const fullAst = esprima.parse(code, { range: true });
     const functions = findFunctions(fullAst);
+    const cfgs = esgraph(fullAst);
+    console.log(cfgs);
 
     text += 'digraph cfg {';
     text += 'node [shape="box"]';
     const dotOptions = { counter: 0, source: code };
-    functions.concat(fullAst).forEach((ast, i) => {
-      let cfg;
+    cfgs.forEach((cfg, i) => {
       let label = '[[main]]';
+      console.log(cfg);
+      const ast = cfg[0].astNode;
       if (ast.type.includes('Function')) {
-        cfg = esgraph(ast.body);
         const name = (ast.id && ast.id.name) || '';
         const params = ast.params.map(p => p.name);
         label = `function ${name}(${params})`;
-      } else {
-        cfg = esgraph(ast);
       }
 
       text += `subgraph cluster_${i}{`;
