@@ -18,6 +18,7 @@
   ],
   "dependencies": {
     "esprima": "^4.0.1",
+    "object-hash": "^2.0.0",
     "walkes": "^0.2.0"
   },
   "devDependencies": {
