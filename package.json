@@ -1,7 +1,7 @@
 {
   "name": "esgraph",
   "description": "creates a control flow graph from an esprima abstract syntax tree",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "keywords": [
     "AST",
     "abstract syntax tree",
